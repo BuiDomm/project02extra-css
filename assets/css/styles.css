@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    word-break: break-all;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Common CSS */
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 186px;
+    padding: 25px 18px;
+    background: #2ac9bf;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 1.8rem;
+
+    text-align: center;
+    color: #ffffff;
+}
+
+.percent {
+    width: var(--width, 30%);
+}
+
+/* ==============Header Css============== */
+
+.fixed-header {
+    position: sticky;
+    top: -35px;
+    padding: 52px 0 15px 0;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.fixed-header .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fixed-header .body .navbar {
+    display: flex;
+}
+
+.fixed-header .navbar .nav {
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #2f3a3b;
+}
+
+.fixed-header .navbar li:hover .nav {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #2f3a3b;
+}
+
+.fixed-header .link {
+    display: flex;
+    gap: 0 24px;
+    align-items: center;
+}
+.fixed-header .link .action {
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #494949;
+}
+.fixed-header .link .btn-signup {
+    min-width: 108px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #1ebfc1;
+    background: #ffffff;
+    border: 1px solid #1ebfc1;
+    border-radius: 6px;
+    padding: 15px 18px;
+}
+
+/* ================Hero Css============== */
+
+.hero .body {
+    display: flex;
+    padding: 35px 0 79px;
+}
+
+.hero .left {
+    width: 39.2%;
+}
+.hero .left .easy {
+    padding-top: 73px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+.hero .left .heading {
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.16;
+    color: #0d1111;
+}
+.hero .left .desc {
+    width: 374px;
+    margin-top: 46px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #9da6a5;
+}
+.hero .left .btn-hero {
+}
+.hero .left .link {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+}
+.hero .left .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    background: #ffffff;
+    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.hero .right {
+    position: relative;
+    width: 55%;
+}
+
+.hero .right .img-hero {
+    margin-left: 136px;
+    width: 100%;
+    height: 631px;
+    object-fit: cover;
+}
+
+.hero .right .courses {
+    position: absolute;
+    top: 139px;
+    left: 96px;
+    width: 157px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+}
+
+.hero .right .courses .body-courses {
+    padding: 17px 25px 18px;
+    gap: 0 16px;
+    display: flex;
+    align-items: center;
+}
+.hero .right .courses .lable {
+    /* display: inline-block; */
+    width: 55px;
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 1rem;
+    color: #0d1111;
+}
+.hero .right .courses::before {
+    position: relative;
+    left: 29px;
+    top: 50px;
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    border-radius: 4px;
+}
+.hero .right .courses .lable1 {
+    white-space: pre;
+    margin-left: -3px;
+}
+.hero .right .schedules {
+    position: absolute;
+    bottom: 46px;
+    left: 70px;
+    width: 124px;
+    background: #ffffff;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+    background-color: #ffffff;
+}
+
+.hero .right .schedules .info {
+    padding: 16px 25px 23px;
+    text-align: center;
+}
+.schedules .info .title {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #0d1111;
+}
+.schedules .info .static-blocks {
+    margin-top: 16px;
+    width: 100%;
+}
+.info .static-blocks .block {
+    height: 6px;
+    background: #edf1f5;
+    border-radius: 3px;
+}
+.info .static-blocks .block + .block {
+    margin-top: 12px;
+}
+.info .static-blocks .block .static {
+    height: 100%;
+    background: #fb9899;
+    border-radius: 3px;
+}
+.hero .right .schedules .end {
+    margin-top: 16px;
+    width: 26px;
+    height: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #edf1f5;
+    border-radius: 3px;
+}

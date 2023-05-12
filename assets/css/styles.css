@@ -670,6 +670,7 @@ a {
 }
 .cta .btn-cta {
     margin-left: 410px;
+    cursor: pointer;
 }
 
 /* ==============Footer CSS============ */
@@ -711,6 +712,10 @@ a {
     font-size: 1.6rem;
     line-height: 1.5;
     color: #535353;
+}
+.footer .item .nav .link1 {
+    display: flex;
+    align-items: center;
 }
 .footer .item .nav .link .social {
     margin-right: 9px;

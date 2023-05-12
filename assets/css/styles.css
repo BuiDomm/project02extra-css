@@ -512,13 +512,28 @@ a {
 /* =============FeedBack CSS============= */
 
 .feedback {
-    margin-top: 264px;
+    margin-top: 200px;
 }
-.feedback .body {
+.feedback .list-item {
+    padding-top: 64px;
     display: flex;
+    overflow: hidden;
+}
+.feedback .item {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    transition: all ease 0.3s;
+    transform: translateX();
 }
 .feedback .left {
+    position: relative;
     width: 36%;
+}
+.feedback .left .points {
+    position: absolute;
+    top: -27px;
+    left: 5px;
 }
 .feedback .left .desc-feedback {
     font-weight: 400;
@@ -630,7 +645,88 @@ a {
     object-fit: cover;
 }
 
+/* ==============CTA CSS================ */
+
+.cta {
+    margin-top: 130px;
+    padding: 76px 0 88px;
+    background: #def6f5;
+}
+.cta .body {
+    display: flex;
+    align-items: center;
+}
+.cta .cta-title .title {
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 63px;
+    color: #070707;
+}
+.cta .cta-title .desc-title {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #767e7e;
+}
+.cta .btn-cta {
+    margin-left: 410px;
+}
+
+/* ==============Footer CSS============ */
+.footer {
+    margin-top: 131px;
+}
+
+.footer .list-item {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .list-item .img-logo {
+    position: relative;
+    top: -93px;
+}
+.footer .list-item .item:first-child {
+    width: 8%;
+}
+.footer .list-item .item:nth-child(2),
+.footer .list-item .item:last-child {
+    width: 10%;
+}
+.footer .list-item .item:nth-child(3) {
+    width: 13.4%;
+}
+.footer .item .title-item {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #2e2e2e;
+}
+.footer .item .nav {
+    margin-top: 5px;
+}
+.footer .item .nav .link {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #535353;
+}
+.footer .item .nav .link .social {
+    margin-right: 9px;
+}
+.footer .copy-right {
+    margin-top: 80px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #b0b5b4;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 /* ================================================================= */
+
 @-webkit-keyframes xoayvong {
     from {
         -webkit-transform: rotate(0deg);
